@@ -1,0 +1,1 @@
+export { MuiThemeProvider as ThemeProvider } from "./ui/ThemeProvider";
