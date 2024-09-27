@@ -5,6 +5,7 @@ import { PageLoader } from "@/shared/ui/PageLoader"
 import { PrivateRoute } from "./PrivateRoute"
 import { Header } from "@/widgets/Header"
 import { Footer } from "@/widgets/Footer"
+import { Container } from "@mui/material"
 
 export const Routing = () => {
     const routeElement = (element: ReactNode) => {
@@ -20,7 +21,9 @@ export const Routing = () => {
             return (
                 <>
                     <Header />
-                    {element}
+                    <Container>
+                        {element}
+                    </Container>
                     <Footer />
                 </>
             )
@@ -28,13 +31,17 @@ export const Routing = () => {
             return (
                 <>
                     <Header />
-                    {element}
+                    <Container>
+                        {element}
+                    </Container>
                 </>
             )
         case 'footer':
             return (
                 <>
-                    {element}
+                    <Container>
+                        {element}
+                    </Container>
                     <Footer />
                 </>
             )

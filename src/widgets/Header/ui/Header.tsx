@@ -44,7 +44,7 @@ export const Header = () => {
     };
 
     return (
-        <AppBar color="primary">
+        <AppBar color="primary" position="static">
             <Container maxWidth="xl">
                 <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>

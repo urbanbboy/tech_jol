@@ -10,6 +10,6 @@ export const theme = createTheme({
         }
     },
     typography: {
-        fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+        fontFamily: '"Inter", "Helvetica", "Arial", sans-serif',
     },
 })

@@ -4,11 +4,9 @@ import { Routing } from "./providers/routerProvider"
 function App() {
 
     return (
-        <>
-            <Box sx={{ bgcolor: '#666', height: '100dvh' }}>
-                <Routing />
-            </Box>
-        </>
+        <Box>
+            <Routing />
+        </Box>
     )
 }
 
