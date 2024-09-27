@@ -46,16 +46,16 @@ export const Footer = () => {
 
             }}
         >
-            <Container sx={{ p: '50px 0 80px 0' }}>
-                <Grid2 container>
-                    <Grid2 size={4}>
+            <Container sx={{ p: '20px 0 80px 0' }}>
+                <Grid2 container columns={{xs: 4, sm: 6, md: 12}}>
+                    <Grid2 size={{xs: 4}}>
                         <Stack>
                             <Avatar
                                 sx={{ width: '150px', height: '150px' }}
                                 alt="Tech Jol"
                                 src="/assets/logo.png"
                             />
-                            <Typography variant="body1" width={'85%'} pt={'20px'}>
+                            <Typography variant="body1" width={'85%'} pt={'20px'} sx={{display: {xs: 'none', md: 'flex'}}}>
                                 Разработка эффективного решения за максимально короткие сроки по самым доступным и конкурентным в странах СНГ ценам.
                             </Typography>
                         </Stack>
@@ -147,8 +147,6 @@ export const Footer = () => {
                             >
                                 <MailIcon />
                                 <Box
-                                    component={'a'}
-                                    href="mailto: info@techjol.kg"
                                     sx={{ color: '#FFF', textDecoration: 'none' }}
                                 >
                                     info@techjol.kg

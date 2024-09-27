@@ -61,7 +61,7 @@ export const Directions = () => {
                     </Typography>
                     <Button
                         variant={'contained'}
-                        sx={{padding: '7px 30px', bgcolor: '#CDA407'}}
+                        sx={{ padding: '7px 30px', bgcolor: '#CDA407' }}
                     >
                         <Link
                             underline="none"
@@ -79,7 +79,15 @@ export const Directions = () => {
     return (
         <Box sx={{ mt: '105px' }}>
             <Typography variant="h4" textAlign={'center'} mb={'45px'}>Багыттар</Typography>
-            <Stack direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 2, md: 4 }}>
+            <Stack
+                direction={{ xs: 'column', sm: 'row' }}
+                spacing={{ xs: 2, sm: 3, md: 4 }}
+                sx={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center'
+                }}
+            >
                 {directions.map((direction) => (
                     <DirectionCard
                         key={direction.id}

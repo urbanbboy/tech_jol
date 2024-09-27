@@ -74,7 +74,11 @@ const mentors = [
 export const Mentors = () => {
 
     return (
-        <Box>
+        <Box
+            sx={{
+                display: {xs: 'none', md: 'block'}
+            }}
+        >
             <Box>
                 <Typography
                     variant="h3"
@@ -128,7 +132,7 @@ export const Mentors = () => {
                     >
                         <Slider>
                             {mentors.map((mentor) => (
-                                <Slide key={mentor.id} index={mentor.id}>
+                                <Slide className="wrap" key={mentor.id} index={mentor.id}>
                                     <MentorCard
                                         name={mentor.name}
                                         position={mentor.position}
@@ -202,6 +206,11 @@ const CarouselWrapper = styled.div`
       width: calc(100% - 32px);
       margin-left: 16px;
     }
+  }
+
+  .wrap{
+    display: flex;
+    flex-wrap: wrap;
   }
 `
 

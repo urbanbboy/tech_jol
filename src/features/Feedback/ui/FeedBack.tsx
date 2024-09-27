@@ -22,7 +22,8 @@ const FeedBackInput = (props: FeedBackInputProps) => {
             placeholder={placeholder}
             sx={{
                 bgcolor: '#FFF',
-                width: '415px',
+                width: { sm: '100%', md: '100%' },
+                maxWidth: '100%',
                 borderRadius: '7px'
             }}
             {...others}
@@ -52,6 +53,8 @@ export const FeedBack = () => {
                     sx={{
                         display: 'flex',
                         justifyContent: 'space-evenly',
+                        flexWrap: 'wrap',
+
                     }}
                 >
                     <Stack gap={'12px'} direction={'column'} >
@@ -65,7 +68,12 @@ export const FeedBack = () => {
                             placeholder={'E-mail'}
                         />
                     </Stack>
-                    <Box>
+                    <Box
+                        sx={{
+                            padding: { xs: '0', md: '10px' },
+                            
+                        }}
+                    >
                         <FeedBackInput
                             multiline
                             rows={7}
